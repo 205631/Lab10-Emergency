@@ -18,6 +18,7 @@ public class Paziente implements Comparable<Paziente> {
 	};
 
 	private int id;
+	private String name;
 	private StatoPaziente stato;
 
 	@Override
@@ -56,9 +57,10 @@ public class Paziente implements Comparable<Paziente> {
 		return "Paziente [id=" + id + ", stato=" + stato + "]";
 	}
 
-	public Paziente(int id, StatoPaziente stato) {
+	public Paziente(int id, String name, StatoPaziente stato) {
 		super();
 		this.id = id;
+		this.name=name;
 		this.stato = stato;
 	}
 
